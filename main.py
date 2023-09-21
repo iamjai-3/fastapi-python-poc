@@ -4,5 +4,5 @@ app = FastAPI()
 
 
 @app.get("/")
-def index():
-    return {"data": {"name": "test"}}
+def healthCheck():
+    return "Health Check!!"
